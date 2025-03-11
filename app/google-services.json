@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603716595785",
+    "project_id": "eco-ray-solutions",
+    "storage_bucket": "eco-ray-solutions.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603716595785:android:7b4322b5f9d8c5ded40f98",
+        "android_client_info": {
+          "package_name": "com.example.photo.video.ecoraysolutions"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6-4XGlI3fhHke5VCWG8D6Y183C_sNak4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

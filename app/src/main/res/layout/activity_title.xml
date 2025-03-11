@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TitleActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/con1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/textHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:gravity="center"
+            android:text="@string/welcome_to"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+        <TextView
+            android:id="@+id/userlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="@string/login"
+            style="@style/textNormal"
+            android:layout_marginHorizontal="@dimen/_14sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imagecon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:rotation="180"
+        android:contentDescription="@null"
+        android:src="@drawable/triangle_fill"
+        app:layout_constraintBottom_toBottomOf="@id/con1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/con1"
+        app:layout_constraintVertical_bias="0.08"
+        app:tint="@color/app_color" />
+
+    <TextView
+        android:id="@+id/welcomeEcoraysoltion"
+        style="@style/textHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textColor="@color/app_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagecon" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registrationbtn"
+        style="@style/textHeading"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginVertical="@dimen/_15sdp"
+        android:backgroundTint="#1B5E20"
+        android:text="@string/registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcomeEcoraysoltion" />
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="@color/app_color"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        android:layout_marginVertical="@dimen/_25sdp"-->
+    <!--        android:layout_marginHorizontal="@dimen/_12sdp"-->
+    <!--        app:cornerRadius="@dimen/_12sdp"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/Welcome_to_Eco_Ray_Solutions"/>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
