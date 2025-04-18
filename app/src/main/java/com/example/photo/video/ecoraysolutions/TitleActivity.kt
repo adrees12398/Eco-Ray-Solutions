@@ -20,7 +20,7 @@ class TitleActivity : AppCompatActivity() {
 
     private fun listener() {
         binding.userlogin.setOnClickListener {
-            startActivity(Intent(this,PasswordActivity::class.java))
+            startActivity(Intent(this,UserSignActivity::class.java))
             finish()
         }
         binding.registrationbtn.setOnClickListener {

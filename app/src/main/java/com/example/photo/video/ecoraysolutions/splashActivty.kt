@@ -22,7 +22,7 @@ class splashActivty : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         bindingsplashActivty = ActivitySplashActivtyBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_splash_activty)
+        setContentView(bindingsplashActivty.root)
         if (sessionManager.getLogin()) {
             splash()
         } else {
@@ -59,7 +59,19 @@ class splashActivty : AppCompatActivity() {
                     finish()
                 },2000)
             } else {
-                startActivity(Intent(this, PasswordActivity::class.java))
+                if (sessionManager.getLogin()) {
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        startActivity(Intent(this, HomePage::class.java))
+
+                        finish()
+                    }, 2000)
+                } else {
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        startActivity(Intent(this, UserSignActivity::class.java))
+
+                        finish()
+                    }, 2000)
+                }
                 finish()
             }
         } else {

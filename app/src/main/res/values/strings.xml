@@ -9,7 +9,9 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="welcome">Welcome To \n Eco Ray Solutions </string>
-
+    <string name="default_web_client_id">603716595785-qu3cbg9d1jcnajkavdh0qei6ahod2667.apps.googleusercontent.com</string>
+    <string name="about_text">Eco Ray Solution is your comprehensive guide to understanding and implementing sustainable technologies. We\'re dedicated to empowering users with accessible information and practical tools related to eco Ray solutions, fostering a community committed to a healthier planet. By simplifying complex concepts and offering actionable insights, Eco Ray Solution strives to make environmentally conscious choices an integral part of everydaylife, driving positive impact for generations to come</string>
+    <string name="contact_info">Contact Us:\nEmail: info@ecoraysystems.com\nPhone: +92 3184159975</string>
 
     <string name="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
@@ -50,4 +52,27 @@
     <string name="login">LogIn</string>
     <string name="welcome_to">Welcome To</string>
     <string name="registration">Registration</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="solarimage">solarImage</string>
+    <string name="high_efficiency_solar_panal">High-Efficiency Solar panal</string>
+    <string name="price_300">price : $300</string>
+    <string name="capacity_300kwh">Capacity : 300Kwh</string>
+    <string name="view_detail">View Detail</string>
+    <string name="instalpro">InstalPro</string>
+    <string name="service_type">Service Type</string>
+    <string name="panel_cleaning">Panel Cleaning</string>
+    <string name="battery_replacement">Battery Replacement</string>
+    <string name="complete_solar_system_setup">Complete Solar system setUp</string>
+    <string name="installation_packages">Installation packages</string>
+    <string name="select_location">Select Location</string>
+    <string name="google_map">Google_Map</string>
+    <string name="dd_mm_yyyy">DD/MM/YYYY</string>
+    <string name="phone_no">Phone no</string>
+    <string name="select_date">Select Date</string>
+    <string name="calender">calender</string>
+    <string name="submit">Submit</string>
+    <string name="custom_solar_system_estimator">Custom Solar System \nEstimator</string>
+    <string name="enter_your_energy_requirements_and_location_to_recive_a_detailed_cost_estimate_for_your_solar_system_setup">Enter your energy requirements and \nlocation to receive a detailed cost estimate \nfor your solar system setup.</string>
+    <string name="energy_requirments_kwh">Energy Requirments(kWh):</string>
 </resources>

@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            style="@style/textHeading"
+            style="@style/TextDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/_25sdp"
@@ -37,7 +37,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="@string/login"
-            style="@style/textNormal"
+            android:textColor="@color/white"
+            style="@style/TextDescription"
             android:layout_marginHorizontal="@dimen/_14sdp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -61,7 +62,7 @@
 
     <TextView
         android:id="@+id/welcomeEcoraysoltion"
-        style="@style/textHeading"
+        style="@style/TextHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/welcome"
@@ -72,12 +73,14 @@
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/registrationbtn"
-        style="@style/textHeading"
+        style="@style/TextButton"
         android:layout_width="@dimen/_180sdp"
         android:layout_height="@dimen/_80sdp"
         android:layout_marginVertical="@dimen/_15sdp"
+        android:layout_marginTop="12dp"
         android:backgroundTint="#1B5E20"
         android:text="@string/registration"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcomeEcoraysoltion" />

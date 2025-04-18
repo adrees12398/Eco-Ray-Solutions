@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.photo.video.ecoraysolutions.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_offerFragment3"
+            app:destination="@id/offerFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerFragment3"
+        android:name="com.example.photo.video.ecoraysolutions.OfferFragment"
+        android:label="fragment_offer"
+        tools:layout="@layout/fragment_offer" >
+        <action
+            android:id="@+id/action_offerFragment3_to_carrFragment"
+            app:destination="@id/carrFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carrFragment"
+        android:name="com.example.photo.video.ecoraysolutions.CarrFragment"
+        android:label="fragment_carr"
+        tools:layout="@layout/fragment_carr" >
+        <action
+            android:id="@+id/action_carrFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.photo.video.ecoraysolutions.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_helpFragment2"
+            app:destination="@id/helpFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment2"
+        android:name="com.example.photo.video.ecoraysolutions.HelpFragment"
+        android:label="fragment_help"
+        tools:layout="@layout/fragment_help" />
+</navigation>

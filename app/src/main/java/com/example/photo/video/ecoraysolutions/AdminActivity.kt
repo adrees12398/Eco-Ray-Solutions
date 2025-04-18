@@ -36,6 +36,7 @@ class AdminActivity : AppCompatActivity() {
                     list.clear()
                     val documents = loaduser.result?.documents
                     documents?.forEach { document ->
+
                         val user = document.toObject(SignUpModel::class.java).apply { this?.id = document.id }
                         user?.let { list.add(it) }
                     }
@@ -58,7 +59,7 @@ class AdminActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
         binding.recyclerView.adapter = adapter
     }
-    
+    /*
     private fun updateStatus(id: String, isApprove: Boolean?, mail: String?) {
         firestore.collection("Users").document(id).update("accountStatus", isApprove).addOnCompleteListener { loaduser ->
             if (loaduser.isSuccessful) {
@@ -67,8 +68,17 @@ class AdminActivity : AppCompatActivity() {
         }.addOnFailureListener { error ->
             Log.i("TAG", "updateStatus: ERROR = ${error.message}")
         }
-    }
+    }*/
 
+    private fun updateStatus(id:String,isApprove:Boolean?,mail: String?){
+        firestore.collection("Users").document(id).update("accountStatus",isApprove).addOnCompleteListener {updateuser->
+            if (updateuser.isSuccessful){
+                sendMail(mail)
+            }
+        }.addOnFailureListener {e->
+            Log.i("TAG", "updateStatus: Error ${e.message}")
+        }
+    }
 
     private fun sendMail(mail: String?) {
         val emailIntent = Intent().apply {

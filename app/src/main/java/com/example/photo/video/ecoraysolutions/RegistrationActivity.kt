@@ -75,7 +75,6 @@ class RegistrationActivity : AppCompatActivity() {
     }
 
     private fun openDatePickerDialog() {
-        // Get Current Date
         val datePickerDialog = DatePickerDialog(
             this, { cal: DatePicker?, year: Int, monthOfYear: Int, dayOfMonth: Int ->
                 val selectedDate = dayOfMonth.toString() + "/" + (monthOfYear + 1) + "/" + year
@@ -130,6 +129,7 @@ class RegistrationActivity : AppCompatActivity() {
 
                                 val model =
                                     SignUpModel(
+//                                        id = task.result.user?.uid,
                                         id = task.result.user?.uid,
                                         name = fname,
                                         father_name = lname,
@@ -152,6 +152,7 @@ class RegistrationActivity : AppCompatActivity() {
                                         showText("${e.message}")
                                     }
                                 }
+
                             }
                         }.addOnFailureListener { e ->
                             Toast.makeText(this, e.message, Toast.LENGTH_SHORT).show()
@@ -184,11 +185,8 @@ class RegistrationActivity : AppCompatActivity() {
             "Rawalpindi"
         )
 
-
         val arrayAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, city)
         binding.spin.adapter = arrayAdapter
-
-
         binding.spin.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -196,13 +194,10 @@ class RegistrationActivity : AppCompatActivity() {
                 position: Int,
                 id: Long
             ) {
-                currentPosition = when (position) {
-                    0 -> "Islamabad"
-                    1 -> "Lahore"
-                    2 -> "Multan"
-                    3 -> "faisalabad"
-                    4 -> "Rawalpindi"
-                    else -> "Lahore"
+                currentPosition = if (position ==0 ) {
+                     null
+                }else{
+                 city[position]
                 }
             }
 
