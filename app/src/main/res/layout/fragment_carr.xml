@@ -58,7 +58,7 @@
                 android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/enter_your_energy_requirements_and_location_to_recive_a_detailed_cost_estimate_for_your_solar_system_setup"
-                app:layout_constraintTop_toBottomOf="@id/enter_your_energy_requirements_and_location_to_recive_a_detailed_cost_estimate_for_your_solar_system_setup"
+                app:layout_constraintTop_toBottomOf="@id/enter_your_energy_requirements_and_location_to_recive_a_detailed_cost_estimate_for_your_solar_system_setup"/>
 
             <NumberPicker
                 android:id="@+id/numberPicker"
