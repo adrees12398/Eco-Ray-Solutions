@@ -27,6 +27,9 @@ class UserSignActivity : AppCompatActivity() {
 
 
 
+
+
+
     private val sessionManager by lazy { SessionManager(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
