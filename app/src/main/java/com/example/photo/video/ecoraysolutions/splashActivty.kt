@@ -11,11 +11,11 @@ import com.example.photo.video.ecoraysolutions.databinding.ActivitySplashActivty
 import com.google.firebase.firestore.FirebaseFirestore
 
 class splashActivty : AppCompatActivity() {
-    lateinit var bindingsplashActivty: ActivitySplashActivtyBinding
+    private lateinit var bindingsplashActivty: ActivitySplashActivtyBinding
 
     private val firestore by lazy { FirebaseFirestore.getInstance() }
 
-    val sessionManager by lazy {
+    private val sessionManager by lazy {
         SessionManager(this)
     }
 
@@ -51,6 +51,7 @@ class splashActivty : AppCompatActivity() {
         }
     }
 
+    @Synchronized
     private fun splash() {
         if (sessionManager.getLogin()) {
             if (sessionManager.getFirstTime()) {
@@ -59,20 +60,10 @@ class splashActivty : AppCompatActivity() {
                     finish()
                 },2000)
             } else {
-                if (sessionManager.getLogin()) {
-                    Handler(Looper.getMainLooper()).postDelayed({
-                        startActivity(Intent(this, HomePage::class.java))
-
-                        finish()
-                    }, 2000)
-                } else {
-                    Handler(Looper.getMainLooper()).postDelayed({
-                        startActivity(Intent(this, UserSignActivity::class.java))
-
-                        finish()
-                    }, 2000)
-                }
-                finish()
+                Handler(Looper.getMainLooper()).postDelayed({
+                    startActivity(Intent(this, UserSignActivity::class.java))
+                    finish()
+                }, 2000)
             }
         } else {
             Handler(Looper.getMainLooper()).postDelayed({

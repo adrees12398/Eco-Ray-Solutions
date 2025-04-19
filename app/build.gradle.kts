@@ -8,6 +8,8 @@ android {
     namespace = "com.example.photo.video.ecoraysolutions"
     compileSdk = 35
 
+
+
     defaultConfig {
         applicationId = "com.example.photo.video.ecoraysolutions"
         minSdk = 24
