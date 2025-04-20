@@ -15,21 +15,11 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 class UserSignActivity : AppCompatActivity() {
 
-
-
-
     private lateinit var binding: ActivityUserSignBinding
     private lateinit var googleSignInClient: GoogleSignInClient
     private lateinit var firebaseAuth: FirebaseAuth
     private val RC_SIGN_IN = 100
     private var otpText = ""
-
-
-
-
-
-
-
     private val sessionManager by lazy { SessionManager(this) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
