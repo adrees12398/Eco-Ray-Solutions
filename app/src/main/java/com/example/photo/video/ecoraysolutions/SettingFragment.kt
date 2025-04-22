@@ -41,9 +41,13 @@ class SettingFragment : Fragment() {
         binding.card1.setOnClickListener {
             startActivity(Intent(requireContext(), ProfileActivity::class.java))
         }
+        binding.card2.setOnClickListener {
+            startActivity(Intent(requireActivity(), ReportActivity::class.java))
+        }
         binding.card5.setOnClickListener {
             dailogue()
         }
+
     }
 
     fun setUpFireStore() {

@@ -74,5 +74,12 @@
     <string name="submit">Submit</string>
     <string name="custom_solar_system_estimator">Custom Solar System \nEstimator</string>
     <string name="enter_your_energy_requirements_and_location_to_recive_a_detailed_cost_estimate_for_your_solar_system_setup">Enter your energy requirements and \nlocation to receive a detailed cost estimate \nfor your solar system setup.</string>
-    <string name="energy_requirments_kwh">Energy Requirments(kWh):</string>
+    <string name="energy_requirments_kwh">Energy Requirements(kWh):</string>
+    <string name="maintance_request">Maintance Request</string>
+    <string name="issue_reporting">Issue Reporting</string>
+    <string name="submit_report">submit Report</string>
+    <string name="remainder_nupdates">Remainder\n<b>Updates</b></string>
+    <string name="direct_npermotion">Direct\n<b>Permeation</b>n</string>
+    <string name="orders_ntechnicion">orders\n <b>technician</b></string>
+    <string name="accesories_ncustomer">accessories\n <b>Customer</b>Customer</string>
 </resources>

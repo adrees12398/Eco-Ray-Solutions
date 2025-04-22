@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphadmin"
+    app:startDestination="@id/solarManagmentAdminFragment">
+
+    <fragment
+        android:id="@+id/solarManagmentAdminFragment"
+        android:name="com.example.photo.video.ecoraysolutions.SolarManagmentAdminFragment"
+        android:label="fragment_solar_managment_admin"
+        tools:layout="@layout/fragment_solar_managment_admin" >
+        <action
+            android:id="@+id/action_solarManagmentAdminFragment_to_orderFragmentAdminActivity"
+            app:destination="@id/orderFragmentAdminActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/serviceManagementFragment"
+        android:name="com.example.photo.video.ecoraysolutions.ServiceManagementFragment"
+        android:label="fragment_service_management"
+        tools:layout="@layout/fragment_service_management" >
+        <action
+            android:id="@+id/action_serviceManagementFragment_to_solarManagmentAdminFragment"
+            app:destination="@id/solarManagmentAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragmentAdminActivity"
+        android:name="com.example.photo.video.ecoraysolutions.OrderFragmentAdminActivity"
+        android:label="fragment_order_admin_activity"
+        tools:layout="@layout/fragment_order_admin_activity" >
+        <action
+            android:id="@+id/action_orderFragmentAdminActivity_to_contactAdminFragment"
+            app:destination="@id/contactAdminFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactAdminFragment"
+        android:name="com.example.photo.video.ecoraysolutions.ContactAdminFragment"
+        android:label="fragment_contact_admin"
+        tools:layout="@layout/fragment_contact_admin" />
+</navigation>
